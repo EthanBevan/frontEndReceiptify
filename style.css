@@ -1,0 +1,198 @@
+body {
+	text-align: center;
+	background-color: #205aaa;
+}
+
+h1 {
+	color: black;
+	font-family: 'Shrikhand', cursive;
+
+}
+
+h2 {
+	color: black;
+	font-family: 'Shrikhand', cursive;
+}
+
+
+
+h3 {
+	color: white;
+	font-family: 'Shrikhand', cursive;
+	 
+}
+
+h4 {
+	color: black;
+	font-family: 'Shrikhand', cursive;
+	 font-size: 30px;
+}
+
+h5 {
+	
+}
+
+
+
+.titlesForReceipt h6 {
+		color: #205aaa;
+	font-family: 'Shrikhand', cursive;
+	text-align: left;
+	margin: 10px 10px 15px 48px;
+	display: inline-block;
+}
+
+
+/*
+.costAndTotal {
+	padding: 1px 1px 1px 0px;
+}*/
+
+
+.username h6 {
+	float: left;
+	margin: 70px 10px 30px 20px;
+		color: green;
+	background-color: white;
+	font-family: 'Shrikhand', cursive;
+	border: 10px solid white;
+	border-radius: 5%;
+	box-shadow: inset 0 0 20px #d8d8d8;
+	padding: 10px;
+}
+
+
+h6 {
+	color: black;
+	font-family: 'Shrikhand', cursive;
+	
+}
+
+
+.myCanvas {
+	background-color: white;
+	 overflow: scroll;
+	border: 20px solid white;
+	border-radius: 5%;
+	box-shadow: inset 0 0 50px #d8d8d8;
+	height: 470px;
+	width: 800px;
+	margin: 20px 0px 0px 240px;
+	
+}
+
+.fontClassLogo {
+	font-family: 'Shrikhand', cursive;
+}
+
+.firstOrderItems {
+	float: left;
+	margin: 25px;
+}
+
+.firstOrderCost {
+float: left;
+	margin: 25px;
+}
+
+.firstOrderDate {
+	float: left;
+	margin: 25px;
+}
+
+.firstOrderType {
+	float: left;
+	margin: 25px;
+}
+
+.firstOrderTransaction {
+	float: left;
+	margin: 25px;
+}
+
+.firstOrderQuantity { 
+	float: left;
+	margin: 25px;
+}
+
+/*.First {
+	display: none;
+}*/
+/*
+second*/
+
+
+.secondOrderItems {
+	float: left;
+	margin: 25px;
+}
+
+.secondOrderCost {
+float: left;
+	margin: 25px;
+}
+
+.secondOrderDate {
+	float: left;
+	margin: 25px;
+}
+
+.secondOrderType {
+	float: left;
+	margin: 25px;
+}
+
+.secondOrderTransaction {
+	float: left;
+	margin: 25px;
+}
+
+.secondOrderQuantity { 
+	float: left;
+	margin: 25px;
+}
+
+/*Third*/
+
+
+
+.thirdOrderItems {
+	float: left;
+	margin: 25px;
+}
+
+.thirdOrderCost {
+float: left;
+	margin: 25px;
+}
+
+.thirdOrderDate {
+	float: left;
+	margin: 25px;
+}
+
+.thirdOrderType {
+	float: left;
+	margin: 25px;
+}
+
+.thirdOrderTransaction {
+	float: left;
+	margin: 25px;
+}
+
+.thirdOrderQuantity { 
+	float: left;
+	margin: 25px;
+}
+
+
+.dropdown {
+	display: inline-block;
+	margin: 1px;
+}
+
+.allDropDowns {
+margin: 0px 230px 0px 0px;
+}
+
