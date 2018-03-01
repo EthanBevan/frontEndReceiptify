@@ -38,7 +38,7 @@ h5 {
 		color: #205aaa;
 	font-family: 'Shrikhand', cursive;
 	text-align: left;
-	margin: 10px 10px 15px 48px;
+	margin: 20px 10px 15px 48px;
 	display: inline-block;
 }
 
@@ -187,6 +187,79 @@ float: left;
 }
 
 
+/*Forth*/
+
+
+
+.forthOrderItems {
+	float: left;
+	margin: 25px;
+}
+
+.forthOrderCost {
+float: left;
+	margin: 25px;
+}
+
+.forthOrderDate {
+	float: left;
+	margin: 25px;
+}
+
+.forthOrderType {
+	float: left;
+	margin: 25px;
+}
+
+.forthOrderTransaction {
+	float: left;
+	margin: 25px;
+}
+
+.forthOrderQuantity { 
+	float: left;
+	margin: 25px;
+}
+
+/*fifth*/
+
+
+
+.fifthOrderItems {
+	float: left;
+	margin: 25px;
+}
+
+.fifthOrderCost {
+float: left;
+	margin: 25px;
+}
+
+.fifthOrderDate {
+	float: left;
+	margin: 25px;
+}
+
+.fifthOrderType {
+	float: left;
+	margin: 25px;
+}
+
+.fifthOrderTransaction {
+	float: left;
+	margin: 25px;
+}
+
+.fifthOrderQuantity { 
+	float: left;
+	margin: 25px;
+}
+
+
+
+
+
+
 .dropdown {
 	display: inline-block;
 	margin: 1px;
@@ -195,4 +268,20 @@ float: left;
 .allDropDowns {
 margin: 0px 230px 0px 0px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

@@ -38,14 +38,13 @@
   <a class='dropdown-button btn green' href='#' data-activates='dropdown1'>Date</a>
   <!-- Dropdown Structure -->
   <ul id='dropdown1' class='dropdown-content'>
-    <li><a href="#!"><i class="material-icons">access_time</i>today</a></li>
-    <li><a href="#!"><i class="material-icons">insert_invitation
+    <li id="todayClick"><a href="#!"><i class="material-icons">access_time</i>today</a></li>
+    <li id="weeklyClick"><a href="#!"><i class="material-icons">insert_invitation
 
 </i>weekly</a></li>
-    <li><a href="#!"><i class="material-icons">library_books
-
+    <li id="monthlyClick"><a href="#!"><i class="material-icons">library_books
 </i>monthly</a></li>
- <li><a href="#!"><i class="material-icons">perm_contact_calendar
+ <li id="yearlyClick"><a href="#!"><i class="material-icons">perm_contact_calendar
 </i>yearly</a></li>
    
   </ul>
@@ -54,13 +53,13 @@
   <a class='dropdown-button btn green' href='#' data-activates='dropdown2'>Item</a>
   <!-- Dropdown Structure -->
   <ul id='dropdown2' class='dropdown-content'>
-     <li><a href="#!"><i class="material-icons">local_dining</i>dining</a></li>
-    <li><a href="#!"><i class="material-icons">flight_takeoff
+     <li id="diningClick"><a href="#!"><i class="material-icons">local_dining</i>dining</a></li>
+    <li id="travelClick"><a href="#!"><i class="material-icons">flight_takeoff
 </i>travel</a></li>
-    <li><a href="#!"><i class="material-icons">important_devices
+    <li id="electronicsClick"><a href="#!"><i class="material-icons">important_devices
 </i>electronics</a></li>
-    <li><a href="#!"><i class="material-icons">shopping_cart</i>clothing</a></li>
-    <li><a href="#!"><i class="material-icons">airline_seat_recline_extra</i>dentist</a></li>
+    <li id="clothingClick"><a href="#!"><i class="material-icons">shopping_cart</i>clothing</a></li>
+    <li id="dentistClick"><a href="#!"><i class="material-icons">airline_seat_recline_extra</i>dentist</a></li>
   </ul>
 
 
@@ -68,23 +67,23 @@
   <a class='dropdown-button btn green' href='#' data-activates='dropdown3'>Type</a>
   <!-- Dropdown Structure -->
   <ul id='dropdown3' class='dropdown-content'>
-    <li><a href="#!"><i class="material-icons">person_outline
+    <li id="personalClick"><a href="#!"><i class="material-icons">person_outline
 </i>personal</a></li>
-    <li><a href="#!"><i class="material-icons">person</i>business</a></li>
+    <li id="businessClick"><a href="#!"><i class="material-icons">person</i>business</a></li>
   </ul>
 
 <!-- Dropdown Trigger -->
   <a class='dropdown-button btn green' href='#' data-activates='dropdown4'>Cost</a>
   <!-- Dropdown Structure -->
   <ul id='dropdown4' class='dropdown-content'>
-    <li><a href="#!"><i class="material-icons">attach_money</i>100 or less</a></li>
-    <li><a href="#!"><i class="material-icons">attach_money</i>100-1000</a></li>
-    <li><a href="#!"><i class="material-icons">attach_money</i>1000-10,000</a></li>
-    <li><a href="#!"><i class="material-icons">attach_money</i>10,000+</a></li>
+    <li id="hundredClick"><a href="#!"><i class="material-icons">attach_money</i>100 or less</a></li>
+    <li id="thousandClick"><a href="#!"><i class="material-icons">attach_money</i>100-1000</a></li>
+    <li id="tenthousandClick"><a href="#!"><i class="material-icons">attach_money</i>1000-10,000</a></li>
+    <li id="plustenthousandClick"><a href="#!"><i class="material-icons">attach_money</i>10,000+</a></li>
   </ul>
 
-
-
+    <a class='dropdown-button btn blue' href='#' data-activates='dropdown5' id='showAllClick' >Show All</a>
+  <!-- Dropdown Structure -->
 </div>
 
 
@@ -114,7 +113,9 @@ receipts data need to be in a table -->
 		<h6>Cost and Total</h6>
 		 </div>
 
-<div class="First">
+		 <div id="myForm">
+
+<div id="clothingFirst" class="First">
 	
 		<div class="firstOrderItems">
 			
@@ -148,7 +149,7 @@ receipts data need to be in a table -->
 
 		<br>
 
-		<div class="Second">
+		<div id="dentistSecond" class="Second">
 
 		<div class="secondOrderItems">
 			
@@ -176,9 +177,12 @@ receipts data need to be in a table -->
 
 		</div>
 </div>
+<br>
+
+		<br>
 
 
-		<div class="Third">
+	<div id="foodThird" class="Third">
 
 		<div class="thirdOrderItems">
 			
@@ -205,13 +209,87 @@ receipts data need to be in a table -->
 		<div class="thirdOrderCost">
 
 		</div>
-</div>
+		<br>
 
-
-
-		
+		<br>
 
 	</div>
+
+
+	<div id="electronicForth" class="Forth">
+
+		<div class="forthOrderItems">
+			
+		</div>
+		
+		<div class="forthOrderQuantity">
+
+		</div>
+
+		<div class="forthOrderDate">
+
+		</div>
+
+
+		<div class="forthOrderType">
+
+		</div>
+
+
+		<div class="forthOrderTransaction">
+
+		</div>
+
+		<div class="forthOrderCost">
+
+		</div>
+		
+	</div>
+		<br>
+
+		<br>
+		<br>
+		<br>
+
+
+	<div id="travelFifth" class="Fifth">
+
+		<div class="fifthOrderItems">
+			
+		</div>
+		
+		<div class="fifthOrderQuantity">
+
+		</div>
+
+		<div class="fifthOrderDate">
+
+		</div>
+
+
+		<div class="fifthOrderType">
+
+		</div>
+
+
+		<div class="fifthOrderTransaction">
+
+		</div>
+
+		<div class="fifthOrderCost">
+
+		</div>
+		
+	</div>
+
+
+<br>
+		<br>
+		<br>
+	</div>
+
+</div>
+
 
 	
 <script

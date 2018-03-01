@@ -23,7 +23,7 @@ var orders = [
 
 
 	{
-	 items: ['500g Rump Steak', 'French Fries', 'Lobster'],
+	 items: ['Rump Steak', 'French Fries', 'Lobster'],
 	 cost: [50, 20, 80],
 	 date: "2018-01-20",
 	 type: 'Food', 
@@ -214,65 +214,230 @@ var newh6ElemThree = $('<h6>')
 
 // //Items
 
-// 	var $thirdOrderItems = $('.thirdOrderItems')
+	var $thirdOrderItems = $('.thirdOrderItems')
 
-// 	var orderThreeItemOne = orders[2]["items"]
+	var orderThreeItemOne = orders[2]["items"][0]
+	var orderThreeItemTwo = orders[2]["items"][1]
+	var orderThreeItemThree = orders[2]["items"][2]
 
-// 	var thirdnewh6ElemOne = $('<h6>')
-// 	thirdnewh6ElemOne.text(orderThreeItemOne)
-// 	$thirdOrderItems.append(thirdnewh6ElemOne)
+	var thirdnewh6ElemOne = $('<h6>')
+	thirdnewh6ElemOne.text(orderThreeItemOne)
+	$thirdOrderItems.append(thirdnewh6ElemOne)
+
+	var thirdnewh6ElemTwo = $('<h6>')
+	thirdnewh6ElemTwo.text(orderThreeItemTwo)
+	$thirdOrderItems.append(thirdnewh6ElemTwo)
+
+	var thirdnewh6ElemThree = $('<h6>')
+	thirdnewh6ElemThree.text(orderThreeItemThree)
+	$thirdOrderItems.append(thirdnewh6ElemThree)
 
 // //Cost
 
-// 	var $thirdOrderCost = $('.thirdOrderCost')
+	var $thirdOrderCost = $('.thirdOrderCost')
 
-// 	var orderThirdCostOne = orders[2]["cost"]
+	var orderThirdCostOne = orders[2]["cost"][0]
+	var orderThirdCostTwo = orders[2]["cost"][1]
+	var orderThirdCostThree = orders[2]["cost"][2]
 	
-// 	var thirdnewh6ElemThree = $('<h6>')
-// 	thirdnewh6ElemThree.text(orderThirdCostOne)
-// 	$thirdOrderCost.append(thirdnewh6ElemThree)
+	var thirdnewh6ElemFour = $('<h6>')
+	thirdnewh6ElemFour.text(orderThirdCostOne)
+	$thirdOrderCost.append(thirdnewh6ElemFour)
+
+	var thirdnewh6ElemFive = $('<h6>')
+	thirdnewh6ElemFive.text(orderThirdCostTwo)
+	$thirdOrderCost.append(thirdnewh6ElemFive)
+
+	var thirdnewh6ElemSix = $('<h6>')
+	thirdnewh6ElemSix.text(orderThirdCostThree)
+	$thirdOrderCost.append(thirdnewh6ElemSix)
 
 // //Date
 
-// 	var $thirdOrderDate = $('.thirdOrderDate')
-// 	var orderThirdDateOne = orders[2]["date"]
-// 	var thirdnewh6ElemFive = $('<h6>')
-// 	thirdnewh6ElemFive.text(orderThirdDateOne)
-// 	$thirdOrderDate.append(thirdnewh6ElemFive)
+	var $thirdOrderDate = $('.thirdOrderDate')
+
+	var orderThirdDateOne = orders[2]["date"]
+
+	var thirdnewh6ElemFive = $('<h6>')
+	thirdnewh6ElemFive.text(orderThirdDateOne)
+	$thirdOrderDate.append(thirdnewh6ElemFive)
 
 
 // // Type
 
-// 	var $thirdOrderType = $('.thirdOrderType')
+	var $thirdOrderType = $('.thirdOrderType')
 
-// 	var orderThirdTypeOne = orders[2]["type"]
+	var orderThirdTypeOne = orders[2]["type"]
 
-// 	var thirdnewh6ElemSix = $('<h6>')
-// 	thirdnewh6ElemSix.text(orderThirdTypeOne)
-// 	$thirdOrderType.append(thirdnewh6ElemSix)
+	var thirdnewh6ElemSix = $('<h6>')
+	thirdnewh6ElemSix.text(orderThirdTypeOne)
+	$thirdOrderType.append(thirdnewh6ElemSix)
 
 
 // // Transaction
 
 
-// 	var $thirdOrderTransaction = $('.thirdOrderTransaction')
+	var $thirdOrderTransaction = $('.thirdOrderTransaction')
 
-// 	var orderThirdTransactionOne = orders[2]["transaction"]
+	var orderThirdTransactionOne = orders[2]["transaction"]
 
-// 	var thirdnewh6ElemSeven = $('<h6>')
-// 	thirdnewh6ElemSeven.text(orderThirdTransactionOne)
-// 	$thirdOrderTransaction.append(thirdnewh6ElemSeven)
+	var thirdnewh6ElemSeven = $('<h6>')
+	thirdnewh6ElemSeven.text(orderThirdTransactionOne)
+	$thirdOrderTransaction.append(thirdnewh6ElemSeven)
 
 // // Quantitiy 
 
-// 	var $thirdOrderQuantity = $('.thirdOrderQuantity')
+	var $thirdOrderQuantity = $('.thirdOrderQuantity')
 
-// 	var orderThirdQuantityOne = orders[2]["quantity"]
+	var orderThirdQuantityOne = orders[2]["quantity"][0]
+	var orderThirdQuantityTwo = orders[2]["quantity"][1]
+	var orderThirdQuantityThree = orders[2]["quantity"][2]
 	
-// 	var thirdnewh6ElemEight = $('<h6>')
-// 	thirdnewh6ElemEight.text(orderThirdQuantityOne)
-// 	$secondOrderQuantity.append(secondnewh6ElemEight)
+	var thirdnewh6ElemEight = $('<h6>')
+	thirdnewh6ElemEight.text(orderThirdQuantityOne)
+	$thirdOrderQuantity.append(thirdnewh6ElemEight)
 
+	var thirdnewh6ElemNine = $('<h6>')
+	thirdnewh6ElemNine.text(orderThirdQuantityTwo)
+	$thirdOrderQuantity.append(thirdnewh6ElemNine)
+
+	var thirdnewh6ElemTen = $('<h6>')
+	thirdnewh6ElemTen.text(orderThirdQuantityThree)
+	$thirdOrderQuantity.append(thirdnewh6ElemTen)
+
+
+// Forth 
+
+//Items
+
+	var $forthOrderItems = $('.forthOrderItems')
+
+	var orderForthItemOne = orders[3]["items"]
+
+	var forthnewh6ElemOne = $('<h6>')
+	forthnewh6ElemOne.text(orderForthItemOne)
+	$forthOrderItems.append(forthnewh6ElemOne)
+
+// //Cost
+
+	var $forthOrderCost = $('.forthOrderCost')
+
+	var orderForthCostOne = orders[3]["cost"]
+	
+	var forthnewh6ElemThree = $('<h6>')
+	forthnewh6ElemThree.text(orderForthCostOne)
+	$forthOrderCost.append(forthnewh6ElemThree)
+
+// //Date
+
+	var $forthOrderDate = $('.forthOrderDate')
+
+	var orderForthDateOne = orders[3]["date"]
+
+	var forthnewh6ElemFive = $('<h6>')
+	forthnewh6ElemFive.text(orderForthDateOne)
+	$forthOrderDate.append(forthnewh6ElemFive)
+
+
+// // Type
+
+	var $forthOrderType = $('.forthOrderType')
+
+	var orderForthTypeOne = orders[3]["type"]
+
+	var forthnewh6ElemSix = $('<h6>')
+	forthnewh6ElemSix.text(orderForthTypeOne)
+	$forthOrderType.append(forthnewh6ElemSix)
+
+
+// // Transaction
+
+
+	var $forthOrderTransaction = $('.forthOrderTransaction')
+
+	var orderForthTransactionOne = orders[3]["transaction"]
+
+	var forthnewh6ElemSeven = $('<h6>')
+	forthnewh6ElemSeven.text(orderForthTransactionOne)
+	$forthOrderTransaction.append(forthnewh6ElemSeven)
+
+// // Quantitiy 
+
+	var $forthOrderQuantity = $('.forthOrderQuantity')
+
+	var orderForthQuantityOne = orders[3]["quantity"]
+	
+	var forthnewh6ElemEight = $('<h6>')
+	forthnewh6ElemEight.text(orderForthQuantityOne)
+	$forthOrderQuantity.append(forthnewh6ElemEight)
+
+
+
+
+// Fifth
+
+//Items
+
+	var $fifthOrderItems = $('.fifthOrderItems')
+
+	var orderfifthItemOne = orders[4]["items"]
+
+	var fifthnewh6ElemOne = $('<h6>')
+	fifthnewh6ElemOne.text(orderfifthItemOne)
+	$fifthOrderItems.append(fifthnewh6ElemOne)
+
+// //Cost
+
+	var $fifthOrderCost = $('.fifthOrderCost')
+
+	var orderfifthCostOne = orders[4]["cost"]
+	
+	var fifthnewh6ElemThree = $('<h6>')
+	fifthnewh6ElemThree.text(orderfifthCostOne)
+	$fifthOrderCost.append(fifthnewh6ElemThree)
+
+// //Date
+
+	var $fifthOrderDate = $('.fifthOrderDate')
+
+	var orderfifthDateOne = orders[4]["date"]
+
+	var fifthnewh6ElemFive = $('<h6>')
+	fifthnewh6ElemFive.text(orderfifthDateOne)
+	$fifthOrderDate.append(fifthnewh6ElemFive)
+
+
+// // Type
+
+	var $fifthOrderType = $('.fifthOrderType')
+
+	var orderfifthTypeOne = orders[4]["type"]
+
+	var fifthnewh6ElemSix = $('<h6>')
+	fifthnewh6ElemSix.text(orderfifthTypeOne)
+	$fifthOrderType.append(fifthnewh6ElemSix)
+
+
+// // Transaction
+
+
+	var $fifthOrderTransaction = $('.fifthOrderTransaction')
+
+	var orderfifthTransactionOne = orders[4]["transaction"]
+
+	var fifthnewh6ElemSeven = $('<h6>')
+	fifthnewh6ElemSeven.text(orderfifthTransactionOne)
+	$fifthOrderTransaction.append(fifthnewh6ElemSeven)
+
+// // Quantitiy 
+
+	var $fifthOrderQuantity = $('.fifthOrderQuantity')
+
+	var orderfifthQuantityOne = orders[4]["quantity"]
+	
+	var fifthnewh6ElemEight = $('<h6>')
+	fifthnewh6ElemEight.text(orderfifthQuantityOne)
+	$fifthOrderQuantity.append(fifthnewh6ElemEight)
 
 
 
@@ -348,6 +513,210 @@ console.log("Fifth Order = $" + fifthOrder)
 
 // on dentist click, set all other orders to display: none;
 // solution: loop through data if not =! item = dentist then set display: none;
+
+
+
+
+// for (i=0; i<orders.length; i++) {
+
+// 	var allItems = orders[i]["type"]
+
+// console.log(allItems)
+
+// if (allItems != "Dentist") {
+
+// 	document.getElementById('clothingFirst').style.display = "none";
+// 	console.log("not dentist")
+// } 
+
+// 
+
+
+
+
+
+//Event listeners. 
+
+//SHOW ALL
+var showAllClick = document.getElementById("showAllClick")
+
+showAllClick.addEventListener("click", function(){ 
+	reset()
+
+});
+
+
+
+
+function reset() {
+	document.getElementById('clothingFirst').style.display = "";
+    document.getElementById('dentistSecond').style.display = "";
+    document.getElementById('foodThird').style.display = "";
+    document.getElementById('electronicForth').style.display = "";
+    document.getElementById('travelFifth').style.display = "";
+}
+
+function setBothNone() {
+	document.getElementById('clothingFirst').style.display = "none";
+    document.getElementById('dentistSecond').style.display = "none";
+    document.getElementById('foodThird').style.display = "none";
+    document.getElementById('electronicForth').style.display = "none";
+    document.getElementById('travelFifth').style.display = "none";
+}
+
+
+
+//Items
+
+//Dentist
+var dentistClick = document.getElementById("dentistClick")
+dentistClick.addEventListener("click", function(){ 
+	reset()
+    document.getElementById('clothingFirst').style.display = "none";
+});
+
+
+//Clothing
+var clothingClick = document.getElementById("clothingClick")
+
+clothingClick.addEventListener("click", function(){ 
+	reset()
+    document.getElementById('dentistSecond').style.display = "none";
+});
+
+//diningClick
+var diningClick = document.getElementById("diningClick")
+
+diningClick.addEventListener("click", function(){ 
+	reset()
+    document.getElementById('dentistSecond').style.display = "none";
+    document.getElementById('clothingFirst').style.display = "none";
+    document.getElementById('electronicForth').style.display = "none";
+    document.getElementById('travelFifth').style.display = "none";
+
+});
+
+// //Clothing
+// var clothingClick = document.getElementById("clothingClick")
+
+// clothingClick.addEventListener("click", function(){ 
+// 	reset()
+//     document.getElementById('dentistSecond').style.display = "none";
+// });
+
+// //Clothing
+// var clothingClick = document.getElementById("clothingClick")
+
+// clothingClick.addEventListener("click", function(){ 
+// 	reset()
+//     document.getElementById('dentistSecond').style.display = "none";
+// });
+
+
+
+
+//Transaction
+
+// var form = document.getElementById("myForm")
+
+//Business
+var businessClick = document.getElementById("businessClick")
+
+businessClick.addEventListener("click", function(){ 
+// window.location.reload()
+reset()
+    document.getElementById('clothingFirst').style.display = "none";
+});
+
+
+//Personal
+
+var personalClick = document.getElementById("personalClick")
+
+personalClick.addEventListener("click", function(){
+reset() 
+// window.location.reload()
+    document.getElementById('dentistSecond').style.display = "none";
+});
+
+
+
+
+
+//COST
+
+//hundred
+
+var hundredClick = document.getElementById("hundredClick")
+
+hundredClick.addEventListener("click", function(){ 
+	reset()
+    document.getElementById('clothingFirst').style.display = "none";
+});
+
+
+//thousand
+var thousandClick = document.getElementById("thousandClick")
+
+thousandClick.addEventListener("click", function(){ 
+	reset()
+    // document.getElementById('dentistSecond').style.display = "none";
+});
+
+
+//thousand - 10,000
+var tenthousandClick = document.getElementById("tenthousandClick")
+
+tenthousandClick.addEventListener("click", function(){ 
+	reset()
+    document.getElementById('dentistSecond').style.display = "none";
+});
+
+//10,000+
+var tenthousandClick = document.getElementById("tenthousandClick")
+
+tenthousandClick.addEventListener("click", function(){ 
+	
+    // document.getElementById('dentistSecond').style.display = "none";
+});
+
+
+//Date
+//today
+
+var todayClick = document.getElementById("todayClick")
+
+todayClick.addEventListener("click", function(){ 
+	reset()
+	setBothNone()
+
+});
+
+//weekly
+var weeklyClick = document.getElementById("weeklyClick")
+
+weeklyClick.addEventListener("click", function(){ 
+	reset()
+	document.getElementById('dentistSecond').style.display = "none";
+
+});
+
+//monthly
+var monthlyClick = document.getElementById("monthlyClick")
+
+monthlyClick.addEventListener("click", function(){ 
+	reset()
+	setBothNone()
+});
+
+//Yearly
+var yearlyClick = document.getElementById("yearlyClick")
+
+yearlyClick.addEventListener("click", function(){ 
+	reset()
+	document.getElementById('clothingFirst').style.display = "none";
+});
+
 
 
 
