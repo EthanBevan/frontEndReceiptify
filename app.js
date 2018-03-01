@@ -809,11 +809,7 @@ yearlyClick.addEventListener("click", function(){
 
 
 
-
-
-
-
-
+// EXTRA
 
 
 

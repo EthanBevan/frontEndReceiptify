@@ -399,5 +399,38 @@ img {
 	padding: 0px 220px 0px 0px;
 }
 
+.backgroundStore {
+	background-color: white;
+}
+
+
+.vansMiddle img {
+	height: 400px;
+	width: auto;
+	margin: 60px 0px 0px 0px;
+	float: left;
+
+	
+}
+
+.puchaseButton {
+
+margin: 15px 0px 0px 90px
+
+
+}
+
+.receiptifyButton {
+	padding: 35px 0px 0px 710px
+
+}
+
+.priceVans {
+	padding: 300px 0px 0px 0px;
+	color: black;
+font-family: 'Shrikhand', cursive;
+}
+
+
 
 
