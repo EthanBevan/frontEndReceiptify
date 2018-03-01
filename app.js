@@ -813,3 +813,11 @@ yearlyClick.addEventListener("click", function(){
 
 
 
+// var purchaseClick = document.getElementById("purchaseClick")
+
+// purchaseClick.addEventListener("click", function(){ 
+	
+// 	alert("Hello")
+
+// });
+
