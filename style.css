@@ -359,8 +359,13 @@ img {
 	padding: 10px 0px 0px 230px;
 }
 
-.First {
-	background-color: green;
+.allTitlesTables {
+	text-decoration: underline;
+	color: white;
 }
+
+/*.clothingFirst {
+	color: white;
+}*/
 
 

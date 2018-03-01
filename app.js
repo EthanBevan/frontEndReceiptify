@@ -558,11 +558,12 @@ showAllClick.addEventListener("click", function(){
 
 
 function reset() {
-	document.getElementById('clothingFirst').style.display = "";
-    document.getElementById('dentistSecond').style.display = "";
-    document.getElementById('foodThird').style.display = "";
-    document.getElementById('electronicForth').style.display = "";
-    document.getElementById('travelFifth').style.display = "";
+	// document.getElementById('clothingFirst').style.display = "";
+ //    document.getElementById('dentistSecond').style.display = "";
+ //    document.getElementById('foodThird').style.display = "";
+ //    document.getElementById('electronicForth').style.display = "";
+ //    document.getElementById('travelFifth').style.display = "";
+    $('tbody tr').show()
 }
 
 function setBothNone() {
@@ -581,7 +582,9 @@ function setBothNone() {
 var dentistClick = document.getElementById("dentistClick")
 dentistClick.addEventListener("click", function(){ 
 	reset()
-    document.getElementById('clothingFirst').style.display = "none";
+	// $('tbody tr').hide()
+	// $('tbody tr(fire)').hide()
+    document.getElementById('clothingFirst').style.display = "none" ;
     document.getElementById('foodThird').style.display = "none";
     document.getElementById('electronicForth').style.display = "none";
     document.getElementById('travelFifth').style.display = "none";
