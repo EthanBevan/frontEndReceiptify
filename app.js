@@ -484,6 +484,9 @@ var totalQuanitiyThree = orders[2]["cost"][2] * orders[2]["quantity"][2]
 var thirdOrder = (totalQuanitiyOne + totalQuanitiyTwo + totalQuanitiyThree)
 // TOTAL of third order
 console.log("Third Order = $" + thirdOrder)
+var thirdnewh6ElemTotalCostOne = $('<h6>')
+	thirdnewh6ElemTotalCostOne.text("$" + thirdOrder)
+	$thirdOrderCost.append(thirdnewh6ElemTotalCostOne)
 
 
 //Forth 
@@ -493,6 +496,9 @@ var forthOrder = orders[3]["cost"]
 var forthOrder = (forthOrder * orders[3]["quantity"])
 
 console.log("Forth Order = $" + forthOrder)
+var forthnewh6ElemTotalCostOne = $('<h6>')
+	forthnewh6ElemTotalCostOne.text("$" + forthOrder)
+	$forthOrderCost.append(forthnewh6ElemTotalCostOne)
 
 
 //Fifth 
@@ -500,6 +506,9 @@ console.log("Forth Order = $" + forthOrder)
 var fifthOrder = orders[4]["cost"]
 
 console.log("Fifth Order = $" + fifthOrder)
+var fifthnewh6ElemTotalCostOne = $('<h6>')
+	fifthnewh6ElemTotalCostOne.text("$" + fifthOrder)
+	$fifthOrderCost.append(fifthnewh6ElemTotalCostOne)
 
 
 
@@ -573,6 +582,9 @@ var dentistClick = document.getElementById("dentistClick")
 dentistClick.addEventListener("click", function(){ 
 	reset()
     document.getElementById('clothingFirst').style.display = "none";
+    document.getElementById('foodThird').style.display = "none";
+    document.getElementById('electronicForth').style.display = "none";
+    document.getElementById('travelFifth').style.display = "none";
 });
 
 
@@ -582,11 +594,13 @@ var clothingClick = document.getElementById("clothingClick")
 clothingClick.addEventListener("click", function(){ 
 	reset()
     document.getElementById('dentistSecond').style.display = "none";
+    document.getElementById('foodThird').style.display = "none";
+    document.getElementById('electronicForth').style.display = "none";
+    document.getElementById('travelFifth').style.display = "none";
 });
 
 //diningClick
 var diningClick = document.getElementById("diningClick")
-
 diningClick.addEventListener("click", function(){ 
 	reset()
     document.getElementById('dentistSecond').style.display = "none";
@@ -596,24 +610,70 @@ diningClick.addEventListener("click", function(){
 
 });
 
-// //Clothing
-// var clothingClick = document.getElementById("clothingClick")
+//travelClick
+var travelClick = document.getElementById("travelClick")
 
-// clothingClick.addEventListener("click", function(){ 
-// 	reset()
-//     document.getElementById('dentistSecond').style.display = "none";
-// });
+travelClick.addEventListener("click", function(){ 
+	reset()
+	document.getElementById('clothingFirst').style.display = "none";
+    document.getElementById('dentistSecond').style.display = "none";
+  document.getElementById('foodThird').style.display = "none";
+    document.getElementById('electronicForth').style.display = "none";
+});
 
-// //Clothing
-// var clothingClick = document.getElementById("clothingClick")
+//electronicsClick
+var electronicsClick = document.getElementById("electronicsClick")
 
-// clothingClick.addEventListener("click", function(){ 
-// 	reset()
-//     document.getElementById('dentistSecond').style.display = "none";
-// });
+electronicsClick.addEventListener("click", function(){ 
+	reset()
+	document.getElementById('clothingFirst').style.display = "none";
+    document.getElementById('dentistSecond').style.display = "none";
+    document.getElementById('foodThird').style.display = "none";
+    document.getElementById('travelFifth').style.display = "none";
+});
+
+//Other items with nothing
 
 
 
+var equipmentClick = document.getElementById("equipmentClick")
+
+equipmentClick.addEventListener("click", function(){ 
+	reset()
+	setBothNone()
+});
+
+
+var eventsClick = document.getElementById("eventsClick")
+
+eventsClick.addEventListener("click", function(){ 
+	reset()
+	setBothNone()
+});
+
+
+var transportClick = document.getElementById("transportClick")
+
+transportClick.addEventListener("click", function(){ 
+	reset()
+	setBothNone()
+});
+
+
+var homeClick = document.getElementById("homeClick")
+
+homeClick.addEventListener("click", function(){ 
+	reset()
+	setBothNone()
+});
+
+
+var fitnessClick = document.getElementById("fitnessClick")
+
+fitnessClick.addEventListener("click", function(){ 
+	reset()
+	setBothNone()
+});
 
 //Transaction
 
@@ -626,6 +686,7 @@ businessClick.addEventListener("click", function(){
 // window.location.reload()
 reset()
     document.getElementById('clothingFirst').style.display = "none";
+    document.getElementById('travelFifth').style.display = "none";
 });
 
 
@@ -636,7 +697,10 @@ var personalClick = document.getElementById("personalClick")
 personalClick.addEventListener("click", function(){
 reset() 
 // window.location.reload()
+ 
     document.getElementById('dentistSecond').style.display = "none";
+    document.getElementById('foodThird').style.display = "none";
+    document.getElementById('electronicForth').style.display = "none";
 });
 
 
@@ -652,6 +716,9 @@ var hundredClick = document.getElementById("hundredClick")
 hundredClick.addEventListener("click", function(){ 
 	reset()
     document.getElementById('clothingFirst').style.display = "none";
+    document.getElementById('foodThird').style.display = "none";
+    document.getElementById('electronicForth').style.display = "none";
+    document.getElementById('travelFifth').style.display = "none";
 });
 
 
@@ -660,7 +727,9 @@ var thousandClick = document.getElementById("thousandClick")
 
 thousandClick.addEventListener("click", function(){ 
 	reset()
-    // document.getElementById('dentistSecond').style.display = "none";
+    document.getElementById('dentistSecond').style.display = "none";
+     document.getElementById('clothingFirst').style.display = "none";
+    document.getElementById('electronicForth').style.display = "none";
 });
 
 
@@ -670,14 +739,17 @@ var tenthousandClick = document.getElementById("tenthousandClick")
 tenthousandClick.addEventListener("click", function(){ 
 	reset()
     document.getElementById('dentistSecond').style.display = "none";
+    document.getElementById('foodThird').style.display = "none";
+    document.getElementById('travelFifth').style.display = "none";
+
 });
 
 //10,000+
-var tenthousandClick = document.getElementById("tenthousandClick")
+var plustenthousandClick = document.getElementById("plustenthousandClick")
 
-tenthousandClick.addEventListener("click", function(){ 
-	
-    // document.getElementById('dentistSecond').style.display = "none";
+plustenthousandClick.addEventListener("click", function(){ 
+	reset()
+	setBothNone()
 });
 
 
@@ -698,7 +770,9 @@ var weeklyClick = document.getElementById("weeklyClick")
 weeklyClick.addEventListener("click", function(){ 
 	reset()
 	document.getElementById('dentistSecond').style.display = "none";
-
+    document.getElementById('foodThird').style.display = "none";
+    document.getElementById('electronicForth').style.display = "none";
+    document.getElementById('travelFifth').style.display = "none";
 });
 
 //monthly
@@ -706,15 +780,27 @@ var monthlyClick = document.getElementById("monthlyClick")
 
 monthlyClick.addEventListener("click", function(){ 
 	reset()
-	setBothNone()
+	document.getElementById('dentistSecond').style.display = "none";
+    document.getElementById('foodThird').style.display = "none";
+    document.getElementById('electronicForth').style.display = "none";
 });
+
+var sixmonthlyClick = document.getElementById("sixmonthlyClick")
+
+sixmonthlyClick.addEventListener("click", function(){ 
+	reset()
+	document.getElementById('dentistSecond').style.display = "none";
+    document.getElementById('electronicForth').style.display = "none";
+});
+
+
+
 
 //Yearly
 var yearlyClick = document.getElementById("yearlyClick")
 
 yearlyClick.addEventListener("click", function(){ 
 	reset()
-	document.getElementById('clothingFirst').style.display = "none";
 });
 
 
