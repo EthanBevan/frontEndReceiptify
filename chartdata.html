@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Receiptify App</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Shrikhand" rel="stylesheet">
+	<link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+	  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
+	  <link href="https://fonts.googleapis.com/css?family=Passion+One" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css?family=Teko" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Boogaloo" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Luckiest+Guy" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Fugaz+One" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+
+<nav class="fontClassLogo">
+    <div class="nav-wrapper grey lighten-5">
+      <a href="#" class="brand-logo center"><span class="blue-text text-darken-2">Receiptify</span></a>
+
+      
+
+
+      <ul id="nav-mobile" class="left hide-on-med-and-down">
+        <li><a href="index.html"><span class="blue-text text-darken-2">Home</span></a></li>
+        <li><a href=""><span class="blue-text text-darken-2">Logout</span></a></li>
+      </ul>
+
+      <img src="lock.png">
+
+      <div class="socialMedia">
+		    <a href="https://www.linkedin.com/?trk=nav_logo" class="fa fa-linkedin"></a>
+			<a href="https://twitter.com/?logged_out=1&lang=en" class="fa fa-twitter"></a>
+			<a href="https://www.facebook.com/?stype=lo&jlou=AfccEo8EbTiOUcJC48n_n0RRwISv9XpDFGLb9rV6bQZ6L63qBUb2HTxuQOmxkqAAMyCq0RzQJa9EnmuaIL_txsEQ&smuh=45954&lh=Ac-4nJcbbnApJd8P" class="fa fa-facebook"></a>
+		</div>
+    </div>
+  </nav>
+
+<div class="subTitle">
+	<h5>Your Chart Data</h5>
+</div>
+<div class="usernameTwo">
+<h5><i class="material-icons"><span class="welcomeColor">person</span></i><br><span class="welcomeColor">Welcome,</span><br><br><span class="ethanbevanText">ethanbevan</span></h5>
+</div>
+
+<div class="chartsButtonsAll">
+<a class='dropdown-button btn green' href='#' data-activates='dropdown1'><i class="material-icons left">date_range</i>Date</a>
+<ul id='dropdown1' class='dropdown-content'>
+    <li id="todayChartClick"><a href="#!"><i class="material-icons">access_time</i>today</a></li>
+    <li id="weeklyChartClick"><a href="#!"><i class="material-icons">assignment</i>weekly</a></li>
+    <li id="monthlyChartClick"><a href="#!"><i class="material-icons">insert_invitation
+</i>monthly</a></li>
+  <li id="sixmonthlyChartClick"><a href="#!"><i class="material-icons">library_books
+</i>six months</a></li>
+ <li id="yearlyChartClick"><a href="#!"><i class="material-icons">perm_contact_calendar
+</i>yearly</a></li>
+  </ul>
+
+<a class='dropdown-button btn green' href='#' data-activates='dropdown5' id='itemsChartClick' >Items Split</a>
+<a class='dropdown-button btn green' href='#' data-activates='dropdown5' id='businessChartClick' >Business/Personal</a>
+
+</div>
+
+
+<script>
+
+
+window.onload = function () {
+
+var chart = new CanvasJS.Chart("chartContainer", {
+	animationEnabled: true,
+	title: {
+		text: "Total Spent"
+	},
+	data: [{
+
+		type: "pie",
+		startAngle: 240,
+		yValueFormatString: "\"$\"##0.00",
+		indexLabel: "{label} {y}",
+		dataPoints: [
+			{color: "#205aaa", y: 1100, label: "Clothing"},
+			{color: "#2db551", y: 2000, label: "Electronic"},
+			{color: "#f2e341", y: 800, label: "Travel"},
+			{color: "#d63131", y: 350, label: "Food"},
+			{color: "#ff9028", y: 80, label: "Dentist"}
+		]
+	}]
+});
+chart.render();
+
+}
+
+
+var businessChartClick = document.getElementById("businessChartClick")
+
+businessChartClick.addEventListener("click", function(){ 
+
+var chart = new CanvasJS.Chart("chartContainer", {
+	animationEnabled: true,
+	title: {
+		text: "Total Spent"
+	},
+	data: [{
+		type: "pie",
+		startAngle: 240,
+		yValueFormatString: "\"$\"##0.00",
+		indexLabel: "{label} {y}",
+		dataPoints: [
+			{color: "#205aaa", y: 2430, label: "Business"},
+			{color: "#2db551", y: 1920, label: "Personal"}
+			
+		]
+	}]
+});
+chart.render();
+
+})
+
+
+
+var itemsChartClick = document.getElementById("itemsChartClick")
+
+itemsChartClick.addEventListener("click", function(){ 
+
+var chart = new CanvasJS.Chart("chartContainer", {
+	animationEnabled: true,
+	title: {
+		text: "Total Spent"
+	},
+	data: [{
+		type: "pie",
+		startAngle: 240,
+		yValueFormatString: "\"$\"##0.00",
+		indexLabel: "{label} {y}",
+		dataPoints: [
+			{color: "#205aaa", y: 1100, label: "Clothing"},
+			{color: "#2db551", y: 2000, label: "Electronic"},
+			{color: "#f2e341", y: 800, label: "Travel"},
+			{color: "#d63131", y: 350, label: "Food"},
+			{color: "#ff9028", y: 80, label: "Dentist"}
+		]
+	}]
+});
+chart.render();
+
+})
+
+
+
+
+
+
+var todayChartClick = document.getElementById("todayChartClick")
+
+todayChartClick.addEventListener("click", function(){ 
+
+var chart = new CanvasJS.Chart("chartContainer", {
+	animationEnabled: true,
+	title: {
+		text: "No Data"
+	},
+	data: [{
+		type: "pie",
+		startAngle: 240,
+		yValueFormatString: "\"$\"##0.00",
+		indexLabel: "{label} {y}",
+		dataPoints: [
+			{y: 0, label: "."}
+			
+		]
+	}]
+});
+chart.render();
+
+})
+
+var weeklyChartClick = document.getElementById("weeklyChartClick")
+
+weeklyChartClick.addEventListener("click", function(){ 
+
+var chart = new CanvasJS.Chart("chartContainer", {
+	animationEnabled: true,
+	title: {
+		text: "Weekly"
+	},
+	data: [{
+		type: "pie",
+		startAngle: 240,
+		yValueFormatString: "\"$\"##0.00",
+		indexLabel: "{label} {y}",
+		dataPoints: [
+			{color: "#205aaa", y: 1120, label: "Clothing"}
+			
+		]
+	}]
+});
+chart.render();
+
+})
+
+var monthlyChartClick = document.getElementById("monthlyChartClick")
+
+monthlyChartClick.addEventListener("click", function(){ 
+
+var chart = new CanvasJS.Chart("chartContainer", {
+	animationEnabled: true,
+	title: {
+		text: "Monthly"
+	},
+	data: [{
+		type: "pie",
+		startAngle: 240,
+		yValueFormatString: "\"$\"##0.00",
+		indexLabel: "{label} {y}",
+		dataPoints: [
+			{color: "#205aaa", y: 1120, label: "Clothing"},
+			{color: "#f2e341", y: 800, label: "Travel"}
+			
+		]
+	}]
+});
+chart.render();
+
+})
+
+
+
+
+var sixmonthlyChartClick = document.getElementById("sixmonthlyChartClick")
+
+sixmonthlyChartClick.addEventListener("click", function(){ 
+
+var chart = new CanvasJS.Chart("chartContainer", {
+	animationEnabled: true,
+	title: {
+		text: "Six Months"
+	},
+	data: [{
+		type: "pie",
+		startAngle: 240,
+		yValueFormatString: "\"$\"##0.00",
+		indexLabel: "{label} {y}",
+		dataPoints: [
+			{color: "#205aaa", y: 1100, label: "Clothing"},
+			{color: "#f2e341", y: 800, label: "Travel"},
+			{color: "#d63131", y: 350, label: "Food"}
+			
+		]
+	}]
+});
+chart.render();
+
+})
+
+
+
+
+var yearlyChartClick = document.getElementById("yearlyChartClick")
+
+yearlyChartClick.addEventListener("click", function(){ 
+
+var chart = new CanvasJS.Chart("chartContainer", {
+	animationEnabled: true,
+	title: {
+		text: "Yearly"
+	},
+	data: [{
+		type: "pie",
+		startAngle: 240,
+		yValueFormatString: "\"$\"##0.00",
+		indexLabel: "{label} {y}",
+		dataPoints: [
+			{color: "#205aaa", y: 1100, label: "Clothing"},
+			{color: "#2db551", y: 2000, label: "Electronic"},
+			{color: "#f2e341", y: 800, label: "Travel"},
+			{color: "#d63131", y: 350, label: "Food"},
+			{color: "#ff9028", y: 80, label: "Dentist"}
+			
+		]
+	}]
+});
+chart.render();
+
+})
+
+</script>
+
+<div id="chartContainer" style="height: 400px; width: 60%; padding: 30px 100px 50px 260px;"></div>
+<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+
+
+<script
+  src="http://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+<script src="app.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+</body>
+
+<footer>
+	<div class="createdFooterTwo">
+		<h6>&copy;
+created by Ethan</h6>
+	</div>
+	
+</footer>
+</html>
