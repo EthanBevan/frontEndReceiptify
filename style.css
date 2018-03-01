@@ -396,7 +396,7 @@ img {
 }
 
 .chartsButtonsAll {
-	padding: 0px 220px 0px 0px;
+	padding: 0px 210px 0px 0px;
 }
 
 .backgroundStore {
@@ -407,7 +407,7 @@ img {
 .vansMiddle img {
 	height: 400px;
 	width: auto;
-	margin: 60px 0px 0px 0px;
+	margin: 20px 0px 0px 0px;
 	float: left;
 
 	
@@ -415,20 +415,51 @@ img {
 
 .puchaseButton {
 
-margin: 15px 0px 0px 90px
+margin: 45px 0px 0px 90px
 
 
 }
 
 .receiptifyButton {
-	padding: 35px 0px 0px 710px
+	padding: 45px 0px 0px 710px
 
 }
 
 .priceVans {
-	padding: 300px 0px 0px 0px;
+	padding: 230px 0px 0px 0px;
 	color: black;
 font-family: 'Shrikhand', cursive;
+}
+
+.scrollButton {
+	float: left;
+	margin: 10px 400px 30px 480px;
+
+}
+
+.scrollButton button {
+	border: 10px solid white;
+	border-radius: 5%;
+	box-shadow: inset 0 0 15px #d8d8d8;
+}
+
+.wingedShoeLogo img {
+	padding: 6px 0px 0px 80px;
+}
+
+
+.subTitleCheckout {
+	color: green;
+	text-decoration: underline;
+	font-family: 'Shrikhand', cursive;
+	 margin: 40px 10px 10px 820px;
+}
+
+.subTitleVansCheckout {
+		color: black;
+		text-decoration: underline;
+	font-family: 'Shrikhand', cursive;
+	 margin: -30px 230px 0px 0px;
 }
 
 

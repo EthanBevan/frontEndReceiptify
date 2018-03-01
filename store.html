@@ -32,7 +32,9 @@
         <li><a href=""><span class="white-text text-darken-2">Logout</span></a></li>
       </ul>
 
+		<div class="wingedShoeLogo">
       <img src="Winged_Shoe-512.png">
+  </div>
 
       <!-- <div class="socialMedia">
 		    <a href="https://www.linkedin.com/?trk=nav_logo" class="fa fa-linkedin"></a>
@@ -41,16 +43,56 @@
 		</div> -->
     </div>
   </nav>
+  <div class="subTitleCheckout">
+	<h5>Checkout</h5>
+</div>
 
+<div class="subTitleVansCheckout">
+	<h6>Vans Old Skool Black</h6>
+</div>
 
 
 
 <div class="vansMiddle">
 	
 
-<img class="vans4" src="vans4.jpg">
+<img class="mySlides" src="vans4.jpg">
+<img class="mySlides" src="vans3.jpg">
+<img class="mySlides" src="vans2.jpg">
+<img class="mySlides" src="vans1.jpg">
+
+
+<script>
+	
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+    showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    if (n > x.length) {slideIndex = 1} 
+    if (n < 1) {slideIndex = x.length} ;
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none"; 
+    }
+    x[slideIndex-1].style.display = "block"; 
+}
+
+</script>
 
 </div>
+
+
+
+<div class="scrollButton">
+<button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+<button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
+</div>
+
 
 <div class="priceVans">
 <p>Price: $120<p>
@@ -66,7 +108,6 @@
     <a class='dropdown-button btn green' href='index.html' data-activates='dropdown5' id="receiptifyClickButton" >Receiptify App</a>
 
     </div>
-
 
 
 <!-- <div class="subTitle">
